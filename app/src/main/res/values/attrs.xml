@@ -21,6 +21,10 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="RectView">
+        <attr name="rectview_height" format="dimension" />
+    </declare-styleable>
+
     <declare-styleable name="Themes">
         <attr name="numberProgressBarStyle" format="dimension"/>
     </declare-styleable>
