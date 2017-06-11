@@ -2,6 +2,9 @@ package domon.cn.coustomerview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+
+import com.orhanobut.logger.Logger;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -37,6 +40,13 @@ public class MainActivity extends AppCompatActivity implements OnProgressBarList
                 });
             }
         }, 1000, 1000);
+
+        mRectView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Logger.e("MainOnClickFun");
+            }
+        });
     }
 
     @Override
